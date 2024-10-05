@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>WIP TODO</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <!-- for 1th page Listout all wip in date  -->
+    <div id="Listdiv">
+
+    </div>
+    <!-- For 2th page to add new wip -->
+    <div class="container createWip mt-5 w">
+        <div class="">
+            <form class="row g-3">
+                <div class="col-auto">
+                    <label for="staticDate" class="visually-hidden">Date</label>
+                    <input type="date" class="form-control" id="staticDate" onchange="Setdate(event)">
+                </div>
+                <div class="col-auto">
+                    <label for="input2" class="visually-hidden">WIP</label>
+                    <input type="text" class="form-control" id="input2" placeholder="wip......">
+                </div>
+                <div class="col-auto">
+                    <button type="button" onclick="CreateWip()" class="btn btn-primary mb-3">+ Add</button>
+                </div>
+            </form>
+        </div>
+        <div class="tablediv">
+            <div><b>WIP : [ <span id="Wipdate"></span> ]</b></div>
+            <ul class="list-group" id="list-group">
+                <!-- <li class="list-group-item d-flex justify-content-between align-items-center">
+                    A list item
+                    <div>
+                        <span class="badge bg-primary rounded-pill">View</span>
+                        <span class="badge bg-success rounded-pill">Edit</span>
+                        <span class="badge bg-danger rounded-pill">Remove</span>
+                    </div>
+                </li>
+                <li class="list-group-item d-flex justify-content-between align-items-center">
+                    A list item
+                    <div>
+                        <span class="badge bg-primary rounded-pill">View</span>
+                        <span class="badge bg-success rounded-pill">Edit</span>
+                        <span class="badge bg-danger rounded-pill">Remove</span>
+                    </div>
+                </li> -->
+            </ul>
+        </div>
+        <br>
+        <div class="row d-flex align-items-end">
+            <div class="col d-flex">
+                <button class="btn btn-primary" onclick="ClearWipList()">Clear_all</button>
+            </div>
+            <div class="col">
+                <button class="btn btn-primary ">Submit</button>
+            </div>
+        </div>
+    </div>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js"
+        integrity="sha384-IQsoLXl5PILFhosVNubq5LC7Qb9DXgDA9i+tQ8Zj3iwWAwPtgFTxbJ8NT4GN1R8p"
+        crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.min.js"
+        integrity="sha384-cVKIPhGWiC2Al4u+LWgxfKTRIcfu0JTxR+EQDz/bgldoEyl4H0zUF0QKbrJ0EcQF"
+        crossorigin="anonymous"></script>
+    <script src="main.js"></script>
+</body>
+
+</html>

@@ -1,0 +1,13 @@
+.createWip{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-content: center;
+    align-items: center;
+}
+#input2{
+    width: 600px;
+}
+.tablediv{
+    width: -webkit-fill-available;
+}
