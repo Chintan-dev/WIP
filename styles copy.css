@@ -1,0 +1,15 @@
+/* You can add your custom styles here if needed */
+.task-text {
+    flex-grow: 1;
+    margin-right: 10px;
+}
+
+.edit-btn, .delete-btn {
+    margin-left: 5px;
+}
+
+li {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}

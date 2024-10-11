@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>All WIP List</title>
+    <title>WIP Detail</title>
     
     <!-- Bootstrap CSS -->
     <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
@@ -12,36 +12,26 @@
     <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
 
     <style>
-        .table-container {
-            margin-top: 30px;
-        }
-        .btn-action {
-            margin-right: 5px;
+        .task-actions {
+            margin-top: 20px;
         }
     </style>
 </head>
 <body>
-    <div class="container">
-        <h1 class="text-center mt-5">All WIP List</h1>
+    <div class="container mt-5">
+        <h1 class="text-center">WIP Tasks for <span id="selectedDate"></span></h1>
         
-        <div class="table-container">
-            <table class="table table-bordered">
-                <thead>
-                    <tr>
-                        <th>Date</th>
-                        <th>Actions</th>
-                    </tr>
-                </thead>
-                <tbody id="wipTableBody"></tbody>
-            </table>
+        <ul class="list-group" id="taskList"></ul>
+        
+        <div class="task-actions">
+            <button class="btn btn-secondary" id="backToMainPage">Back to Main Page</button>
         </div>
-        
     </div>
 
     <!-- Bootstrap JS -->
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.bundle.min.js"></script>
 
     <!-- Custom JS -->
-    <script src="main.js"></script>
+    <script src="wip-detail.js"></script>
 </body>
 </html>

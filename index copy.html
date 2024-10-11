@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>WIP To-Do List with Date Filter</title>
+    
+    <!-- Bootstrap CSS -->
+    <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
+    
+    <!-- jQuery -->
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+
+    <style>
+        .fixed-text {
+            margin-top: 20px;
+            margin-bottom: 10px;
+            font-weight: bold;
+            font-size: 1.2rem;
+        }
+        .fixed-text span {
+            font-style: italic;
+        }
+        .date-text {
+            font-size: 1.1rem;
+            margin-bottom: 10px;
+        }
+        .signing-off-text {
+            margin-top: 20px;
+            font-style: italic;
+            font-size: 1.1rem;
+        }
+    </style>
+</head>
+<body>
+    <div class="container mt-5">
+        <h1 class="text-center mb-4">WIP To-Do List</h1>
+        
+        <div class="row justify-content-center">
+            <div class="col-md-8">
+                <!-- Date Picker Input -->
+                <div class="form-group">
+                    <label for="dateInput">Select Date</label>
+                    <input type="date" class="form-control" id="dateInput" placeholder="Select Date">
+                </div>
+
+                <!-- Task Input Field -->
+                <div class="input-group mb-3">
+                    <input type="text" class="form-control" id="taskInput" placeholder="Enter a new task" aria-label="New Task">
+                    <div class="input-group-append">
+                        <button class="btn btn-success" id="addTaskBtn">Add Task</button>
+                    </div>
+                </div>
+
+                <!-- Static Text: Signing Off and WIP -->
+                <div class="fixed-text">
+                    <b> WIP - WASL <span>[Sujit]</span> </b>
+                </div>
+                <div class="date-text" id="displayDate"></div>
+
+                <!-- Task List -->
+                <ul class="list-group" id="taskList"></ul>
+
+                <!-- Static Text: Signing Off -->
+                <div class="signing-off-text">
+                    <b> Signing off. </b>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Bootstrap JS (optional, for Bootstrap components if needed) -->
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.bundle.min.js"></script>
+    
+    <!-- Custom JS -->
+    <script src="script.js"></script>
+</body>
+</html>
